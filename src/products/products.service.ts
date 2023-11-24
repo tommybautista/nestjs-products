@@ -8,13 +8,11 @@ export class ProductsService {
 
     constructor() {}
 
-    insertProduct(
-        title: string,
-        desc: string,
-        price: number
-    ) {
-        const newProduct = new Product(new Date().toString(),title, desc, price);
+    insertProduct(title: string, desc: string, price: number) {
+        const prodId = new Date().toString();
+        const newProduct = new Product(prodId, title, desc, price);
         this.products.push(newProduct);
+        return newProduct;
     }
 
 }
