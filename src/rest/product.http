@@ -1,0 +1,16 @@
+GET http://localhost:3000/products HTTP/1.1
+
+###
+
+GET http://localhost:3000/products?parentId=655a3ecd3f9161299d2c53d2
+
+###
+
+POST http://localhost:3000/products  HTTP/1.1
+content-type: application/json
+
+{
+    "title" : "this is a title",
+    "description" : "a brief description of the title",
+    "price" : 30
+}
