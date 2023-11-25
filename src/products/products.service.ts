@@ -9,7 +9,7 @@ export class ProductsService {
     constructor() {}
 
     insertProduct(title: string, desc: string, price: number) {
-        const prodId = Math.random.toString();
+        const prodId = Math.random().toString();
         const newProduct = new Product(prodId, title, desc, price);
         this.products.push(newProduct);
         return newProduct;
@@ -20,7 +20,7 @@ export class ProductsService {
     }
 
     getSingleProduct(productId: string) {
-        const product = this.products.find((prod) => prod.id === productId);
+        const product = this.products.find((item) => item.id === productId);
         if (!product) {
             throw new NotFoundException();
         }
