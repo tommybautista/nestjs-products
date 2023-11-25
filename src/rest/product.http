@@ -2,7 +2,7 @@ GET http://localhost:3000/products HTTP/1.1
 
 ###
 
-GET http://localhost:3000/products/0.52948s3813686261
+GET http://localhost:3000/products/0.4815126657320852
 
 ###
 
@@ -10,7 +10,21 @@ POST http://localhost:3000/products  HTTP/1.1
 content-type: application/json
 
 {
-    "title" : "this is a  title",
+    "title" : "this is a  title 3",
     "description" : "a brief description of the title",
     "price" : 30
 }
+
+###
+
+PATCH http://localhost:3000/products/0.04712622414342027  HTTP/1.1
+content-type: application/json
+
+{
+    "title" : "another update",
+    "description" : "a brief description of the title",
+    "price" : 300
+}
+
+###
+DELETE  http://localhost:3000/products/0.4815126657320852
