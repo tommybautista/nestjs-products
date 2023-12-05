@@ -2,7 +2,7 @@ GET http://localhost:3000/products HTTP/1.1
 
 ###
 
-GET http://localhost:3000/products/656328c1aa005abddde5479d5
+GET http://localhost:3000/products/656dae09b48c6416e3f7f65c
 
 
 
@@ -12,20 +12,20 @@ POST http://localhost:3000/products  HTTP/1.1
 content-type: application/json
 
 {
-    "title" : "this is a  title 5",
-    "description" : "a brief description of the title",
+    "title" : "product 7",
+    "description" : "this is product 76",
     "price" : 30
 }
 
 ###
 
-PATCH http://localhost:3000/products/656326a3420c57e34423754d  HTTP/1.1
+PATCH http://localhost:3000/products/656dae09b48c6416e3f7f65c  HTTP/1.1
 content-type: application/json
 
 {
-    "title" : "brannd new update"
-    # "description" : "a brief description of the title",
-    # "price" : 400
+    "title" : "brannd new update",
+    "description" : "a brief description of the title",
+    "price" : 400
 }
 
 ###

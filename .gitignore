@@ -35,5 +35,5 @@ lerna-debug.log*
 !.vscode/extensions.json
 node_modules
 
-# user environments
+# User environment
 .env
